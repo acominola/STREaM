@@ -1,5 +1,4 @@
-
-%% This is the MAIN file to run STREaM (STochastic REsidential
+% This is the MAIN file to run STREaM (STochastic REsidential
 % wAter end use Model)
 
 % AVAILABLE FIXTURES
@@ -47,7 +46,7 @@ param.appliances.StBathtub = 1;
 param.appliances.HEBathtub = 0;
 
 % --- C. Time horizon length setting
-param.H = 500; % It is measured in [days]
+param.H = 365; % It is measured in [days]
 
 % --- D. Time sampling resolution
 param.ts = 1; % It is measured in [10 seconds] units. The maximum resolution allowed is 10 seconds (param.ts = 1).
@@ -61,7 +60,8 @@ temp=checkInput(param);
 clearvars -except param
 
 %% ::: LOADING COMPLETE DATABASE :::
-addpath(‘/STREaM/_DATA'); % Path to the folder where the database.mat file is stored
+homeFolder = pwd;
+addpath([homeFolder '/_DATA']); % Path to the folder where the database.mat file is stored
 load database.mat
 
 %% ::: WATER END-USE TIME SERIES GENERATION :::

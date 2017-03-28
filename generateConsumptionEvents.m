@@ -138,9 +138,7 @@ for currApp = 1:length(appNames) % For each appliance
                         coeffProp(isnan(coeffProp)) = 0;
                     end
                     
-                    plot(event), hold on;
                     event = event - volumeDifference.*coeffProp;
-                    plot(event), pause; hold off;
                     if sum((event<0))> 0
                         disp('error');
                     end
