@@ -50,7 +50,7 @@ param.appliances.HEBathtub = 0;
 % --- C. Time horizon length setting
 param.H = 365; % It is measured in [days]
 ```
-- TIME SAMPLING RESOLUTION for synthetic data generation
+- TIME SAMPLING RESOLUTION for synthetic data generation. It must be set in [10 seconds] units, e.g., for a desired sampling resolution of 1 minute, ```param.ts``` should be set to 6, for a resolution of 1 hour it should be set to 360, etc.
 ```matlab
 % --- D. Time sampling resolution
 param.ts = 1; % It is measured in [10 seconds] units. The maximum resolution allowed is 10 seconds (param.ts = 1).
