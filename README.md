@@ -10,14 +10,14 @@ This repository contains the code of **STREaM, the STochastic REsidential water 
 The main Matlab file to run STREaM is [```MAIN_STREAM.m```](https://github.com/acominola/STREaM/blob/master/MAIN_STREaM.m).
 
 Users should set the following input settings, before running the file:
-- household size
+- HOUSEHOLD SIZE
 ```matlab
 % --- A. Household size setting
 param.HHsize = 2; % This parameter should be in the interval (1,6).
 % From 1 to 5, it indicates the number of people living in the
 % house. 6 means ">5".
 ```
-- presence of end-uses (available fixtures in this version of STREaM are toilet, shower, faucet, clothes washer, dishwasher, bathtub) and their efficiency (in the code below "St" refers to "Standard" fixtures, "HE" to "High-efficiency" fixtures):
+- PRESENCE OF END USES (available fixtures in this version of STREaM are toilet, shower, faucet, clothes washer, dishwasher, bathtub) AND THEIR EFFICIENCY (in the code below "St" refers to "Standard" fixtures, "HE" to "High-efficiency" fixtures):
 
 ```matlab
 % --- B. Water consuming fixtures selection
@@ -43,12 +43,12 @@ param.appliances.HEDishwasher = 0;
 param.appliances.StBathtub = 1;
 param.appliances.HEBathtub = 0;
 ```
-- length of the simulation horizon
+- LENGTH OF THE SIMULATION HORIZON
 ```matlab
 % --- C. Time horizon length setting
 param.H = 365; % It is measured in [days]
 ```
-- time sampling resolution for data generation
+- TIME SAMPLING RESOLUTION for synthetic data generation
 ```matlab
 % --- D. Time sampling resolution
 param.ts = 1; % It is measured in [10 seconds] units. The maximum resolution allowed is 10 seconds (param.ts = 1).
