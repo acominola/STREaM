@@ -7,6 +7,55 @@ This repository contains the code of **STREaM, the STochastic REsidential water 
 **Citation:** Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., and Abdallah, A. M., (under review). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management.
 
 ### Getting started
+The main Matlab file to run STREaM is [```MAIN_STREAM.m```](https://github.com/acominola/STREaM/blob/master/MAIN_STREaM.m).
+
+Users should set the following input settings, before running the file:
+- household size
+```matlab
+% --- A. Household size setting
+param.HHsize = 2; % This parameter should be in the interval (1,6).
+% From 1 to 5, it indicates the number of people living in the
+% house. 6 means ">5".
+```
+- presence of end-uses (available fixtures in this version of STREaM are toilet, shower, faucet, clothes washer, dishwasher, bathtub) and their efficiency (in the code below "St" refers to "Standard" fixtures, "HE" to "High-efficiency" fixtures):
+
+```
+% --- B. Water consuming fixtures selection
+% Legend:
+% 0 = not present
+% 1 = present
+
+param.appliances.StToilet = 1;
+param.appliances.HEToilet = 0;
+
+param.appliances.StShower = 1;
+param.appliances.HEShower = 0;
+
+param.appliances.StFaucet = 1;
+param.appliances.HEFaucet = 0;
+
+param.appliances.StClothesWasher = 1;
+param.appliances.HEClothesWasher = 0;
+
+param.appliances.StDishwasher = 1;
+param.appliances.HEDishwasher = 0;
+
+param.appliances.StBathtub = 1;
+param.appliances.HEBathtub = 0;
+```
+- length of the simulation horizon
+```
+% --- C. Time horizon length setting
+param.H = 365; % It is measured in [days]
+```
+- time sampling resolution for data generation
+```
+% --- D. Time sampling resolution
+param.ts = 1; % It is measured in [10 seconds] units. The maximum resolution allowed is 10 seconds (param.ts = 1).
+```
+After the above settings are defined, users can run the [```MAIN_STREAM.m```](https://github.com/acominola/STREaM/blob/master/MAIN_STREaM.m) script and it will produce as output the ```outputTrajectory.mat``` matlab structure. It contains the time series of water consumption for the defined house, simulation horizon, and sampling resolution for each end-use fixture, as well as their aggregate consumption.
+
+All statistics, probability distributions, and end-use signatures needed by STREaM to run are contained in the [```database.mat```](https://github.com/acominola/STREaM/tree/master/_DATA.database.mat) file, in the [```DATA```](https://github.com/acominola/STREaM/tree/master/_DATA) subfolder.
 
 ### Authors
 - [Andrea Cominola, Matteo Giuliani, Andrea Castelletti](http://www.nrm.deib.polimi.it/)  - NRM Group | Department of Electronics, Information, and Bioengineering | Politecnico di Milano
