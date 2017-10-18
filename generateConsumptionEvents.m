@@ -1,6 +1,6 @@
 function [outputTrajectory, statistics] = generateConsumptionEvents(outputTrajectory, param, database)
 
-% Core of STREaM (STochastic REsidential wAter end use Model). This function generates
+% Core of STREaM (STochastic REsidential water end use Model). This function generates
 % synthetic water end-use time series.
 
 % Appliance list
