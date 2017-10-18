@@ -2,12 +2,9 @@
 
 This repository contains the code of **STREaM, the STochastic REsidential water end-use Model**, a stochastic simulation model to generate synthetic time series of water end uses with diverse sampling resolutions. **STREaM** allows the generation of residential water demand traces at the end-use level up to a 10-second resolution. Each water end-use fixture in our model is characterized by its signature (i.e., typical consumption pattern), as well as its probability distributions of number of uses per day, single use durations, water demand contribution and time of use during the day. STREaM is calibrated on a large dataset including observed and disaggregated water end-uses from over 300 single-family households in nine U.S. cities.
 
-**Requirements**
-Matlab - STREaM has been developed and tested on Matlab R2016a
+**Requirements:** Matlab - STREaM has been developed and tested on Matlab R2016a
 
-**Citation** 
-```Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., and Abdallah, A. M., (*under review*). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management.
-```
+**Citation:** Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., and Abdallah, A. M., (under review). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management.
 
 ## Getting started
 
