@@ -19,7 +19,7 @@ param.HHsize = 2; % This parameter should be in the interval (1,6).
 ```
 - presence of end-uses (available fixtures in this version of STREaM are toilet, shower, faucet, clothes washer, dishwasher, bathtub) and their efficiency (in the code below "St" refers to "Standard" fixtures, "HE" to "High-efficiency" fixtures):
 
-```
+```matlab
 % --- B. Water consuming fixtures selection
 % Legend:
 % 0 = not present
@@ -44,12 +44,12 @@ param.appliances.StBathtub = 1;
 param.appliances.HEBathtub = 0;
 ```
 - length of the simulation horizon
-```
+```matlab
 % --- C. Time horizon length setting
 param.H = 365; % It is measured in [days]
 ```
 - time sampling resolution for data generation
-```
+```matlab
 % --- D. Time sampling resolution
 param.ts = 1; % It is measured in [10 seconds] units. The maximum resolution allowed is 10 seconds (param.ts = 1).
 ```
