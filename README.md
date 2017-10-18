@@ -6,9 +6,9 @@ This repository contains the code of **STREaM, the STochastic REsidential water 
 
 **Citation:** Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., and Abdallah, A. M., (under review). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management.
 
-## Getting started
+### Getting started
 
-## Authors
+### Authors
 - [Andrea Cominola, Matteo Giuliani, Andrea Castelletti](http://www.nrm.deib.polimi.it/)  - NRM Group | Department of Electronics, Information, and Bioengineering | Politecnico di Milano
 - [David E. Rosenberg, Adel M. Abdallah](http://rosenberg.usu.edu/) - Department of Civil and Environmental Engineering | Utah State University
 
