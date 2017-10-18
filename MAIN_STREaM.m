@@ -77,5 +77,9 @@ disp('End-use consumption trajectories created');
 outputTrajectory = sumToTotal(outputTrajectory);
 disp('Total consumption trajectory created');
 
+% Data scaling to desired sampling resolution
+outputTrajectory = aggregateSamplingResolution(outputTrajectory, param);
+disp('Data scaled to desired sampling resolution');
+
 % Saving
 save outputTrajectory.mat outputTrajectory
