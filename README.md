@@ -1,4 +1,4 @@
-# STREaM - STochastic REsidential water end-use Model
+# STREaM - STochastic Residential water End-use Model
 
 This repository contains the code of **STREaM, the STochastic REsidential water end-use Model**, a stochastic simulation model to generate synthetic time series of water end uses with diverse sampling resolutions. 
 
