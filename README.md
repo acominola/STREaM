@@ -6,7 +6,7 @@ This repository contains the code of **STREaM, the STochastic Residential water 
 
 **Requirements:** Matlab - STREaM has been developed and tested on Matlab R2016a
 
-**Citation:** Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., & Abdallah, A. M. (2018). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management. Environmental Modelling & Software, 102, 199-212.
+**Citation:** [Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., & Abdallah, A. M. (2018). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management. Environmental Modelling & Software, 102, 199-212.](https://www.sciencedirect.com/science/article/pii/S1364815217311301)
 
 ### Getting started
 The main Matlab file to run STREaM is [```MAIN_STREAM.m```](https://github.com/acominola/STREaM/blob/master/MAIN_STREaM.m).
