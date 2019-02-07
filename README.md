@@ -64,7 +64,7 @@ All statistics, probability distributions, and end-use signatures needed by STRE
 - [David E. Rosenberg, Adel M. Abdallah](http://rosenberg.usu.edu/) - Department of Civil and Environmental Engineering | Utah State University
 
 ### References
-- **STREaM** is fully presented and tested in "Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., and Abdallah, A. M., (*under review*). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management"
+- **STREaM** is fully presented and tested in "Cominola, A., Giuliani, M., Castelletti, A., Rosenberg, D. E., & Abdallah, A. M. (2018). Implications of data sampling resolution on water use simulation, end-use disaggregation, and demand management. Environmental Modelling & Software, 102, 199-212."([download here](https://www.sciencedirect.com/science/article/pii/S1364815217311301))
 - **STREaM** derives from the prototype of stochastic simulation model presented in "Cominola, A., Giuliani, M., Castelletti, A., Abdallah, A. M., and Rosenberg, D. E., 2016. Developing a stochastic simulation model for the generation of residential water end-use demand time series. In Proceedings of the 8th International Congress on Environmental Modelling and Software (iEMSs 2016), Toulouse, FR, 10-14 July 2016." ([download here](http://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=1606&context=iemssconference))
 
 ### License
